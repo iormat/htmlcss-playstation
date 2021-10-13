@@ -5,8 +5,8 @@ body {
     /* buttons */
 .btn {
     padding: 3px 10px;
-    border: 2px solid transparent;
     border-radius: 20px;
+    border: 0;
 }
 
 .btn:hover {
@@ -17,8 +17,13 @@ body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 500px;
+    padding: 230px 0 50px 0;
     color: #fff;
+}
+
+.jumbotron img {
+    max-width: 50%;
+    min-width: 280px;
 }
 
 .jumbotron h2 {
@@ -91,11 +96,3 @@ header .jumbotron {
     margin-top: 95px;
     background-image: url('../img/jumbo-bg.png');
 }
-
- .jumbotron img {
-     max-width: 20%;
- }
-
- .jumbotron .container {
-     height: 100%;
- }
