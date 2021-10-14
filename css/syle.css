@@ -349,3 +349,12 @@ header .jumbotron {
     text-decoration: none;
     color: #000;
 }
+
+    /* social section */
+#social {
+    margin: 50px 0;
+}
+
+#social img {
+    width: 100%;
+}
