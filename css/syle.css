@@ -69,6 +69,26 @@ body {
     bottom: 20px;
 }
 
+    /* banner */
+.ps_banner img {
+    width: 50%;
+    min-width: 250px;
+    padding: 30px 0;
+}
+
+.ps_banner .ps_show_hide img {
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+}
+
+    /* hide banner image */
+@media screen and (max-width: 767px) {
+    .ps_show_hide {
+        display: none;
+    }
+}
+
 /* HEADER */
 header {
     font-family: 'Helvetica';
@@ -297,27 +317,9 @@ header .jumbotron {
     background-color: #BCB9B8;
 }
 
-.ps_banner img {
-    width: 50%;
-    min-width: 250px;
-    padding: 30px 0;
-}
-
-.ps_banner .ps_show_hide img {
-    max-width: 100%;
-    width: 100%;
-    padding: 0;
-}
-
-    /* hide banner image */
-@media screen and (max-width: 767px) {
-    .ps_show_hide {
-        display: none;
-    }
-}
-
 #odd_ban .btn {
     background-color: rgba(255, 255, 255, .5);
+    margin-bottom: 20px;
 }
 
 #odd_ban .btn a {
@@ -325,7 +327,25 @@ header .jumbotron {
 }
 
     /* sales section */
-#sales img {
+#sales {
+    margin: 50px 0;
+}
+
+    #sales img {
     width: 100%;
 }
 
+    /* marv_ban section */
+#marv_ban {
+    background-color: #181C39;
+    color: #fff
+}
+
+#marv_ban .btn {
+    margin-bottom: 20px;
+}
+
+#marv_ban .btn a {
+    text-decoration: none;
+    color: #000;
+}
