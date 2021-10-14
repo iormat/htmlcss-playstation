@@ -1,11 +1,9 @@
 /* GENERAL RULES */
 body {
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
-:hover {
-    cursor: pointer;
-}
     /* buttons */
 .btn {
     padding: 3px 10px;
@@ -38,10 +36,38 @@ body {
     font-size: 1rem;
     margin: 20px 0;
 }
+
     /* container for centering */
 .ps_container_center {
     text-align: center;
-}    
+}
+
+    /* preview blocks */
+.block_preview {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.block_preview .col{
+    padding: 12px 0;
+}
+
+.block_preview img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 15px;
+    padding: 3px;
+    position: relative;
+}
+
+.block_preview .ps_block_active img{
+    box-shadow: inset 0 0 0 2px #3499ec; 
+}
+
+.block_preview img:hover {
+    box-shadow: inset 0 0 0 2px #3499ec;
+    bottom: 20px;
+}
 
 /* HEADER */
 header {
@@ -76,9 +102,27 @@ nav .dropdown, .dropend, .dropstart, .dropup {
     position: static;
 }
 
+.navbar-expand-md .navbar-nav .dropdown-menu {
+    width: 100%;
+    text-align: center;
+    max-height: 200px;
+    overflow-y: auto;
+}
+
 nav .dropdown-menu li {
     display: inline-block;
     text-align: center;
+}
+
+nav .dropdown-menu li a {
+    padding: 10px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+nav .dropdown-menu li a img{
+    border-radius: 10px;
+    overflow: hidden;
 }
 
 nav .navbar-collapse {
@@ -86,7 +130,7 @@ nav .navbar-collapse {
 }
 
 nav .dropdown-item:hover {
-    background-color: transparent;
+    background-color: rgba(48, 110, 202, .6);
 }
 
 nav .ps_flex{
@@ -104,26 +148,6 @@ header .jumbotron {
     background-image: url('../img/jumbo-bg.png');
 }
 
-    /* preview blocks */
-#block-preview {
-    text-align: center;
-    margin: 20px 0;
-}
-
-#block-preview img {
-    width: 100%;
-    max-width: 350px;
-    border-radius: 10px;
-    padding: 3px;
-}
-
-#block-preview .ps_block_active img{
-    box-shadow: inset 0 0 0 2px #3499ec; 
-}
-
-#block-preview img:hover {
-    box-shadow: inset 0 0 0 2px #3499ec;
-}
 /* MAIN */
     /* ps5 section */
 .ps_container_center h5 {
@@ -183,4 +207,44 @@ header .jumbotron {
     opacity: 1
 }
 
+    /* jumbotron takes_two */
+.jumbotron.takes_two {
+    background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
+    padding-top: 50px;
+}
+
+.jumbotron.takes_two img{
+    max-width: 40%;
+}
+
+    /* just released section */
+#just_released {
+    background-color: #1F1F1F;
+    color: #fff;
+    padding: 30px 0;
+}
+
+#just_released.block_preview {
+    margin: 0;
+}
+
+#just_released h2, #just_released p {
+    text-align: initial;
+}
+
+
+#just_released h6 {
+    text-align: initial;
+    margin: 0 10px;
+}
+
+#just_released a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.block_preview .col:hover img{
+    box-shadow: inset 0 0 0 2px #3499ec;
+    bottom: 20px;
+}
 
