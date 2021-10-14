@@ -4,6 +4,20 @@ body {
     overflow-x: hidden;
 }
 
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.jumbotron, #just_released, #marv_ban, footer {
+    color: #fff;
+}
+    /* section margin generalized */
+.block_preview, .ps_product_preview, 
+#ps4_sect, .product_sell, #sales, #social {
+    margin: 50px 0;
+} 
+
     /* buttons */
 .btn {
     padding: 3px 10px;
@@ -13,13 +27,16 @@ body {
 .btn:hover {
     box-shadow: inset 0 0 0 2px #cfcfcf;
 }
+#odd_ban .btn:hover, #marv_ban .btn:hover {
+    box-shadow: inset 0 0 0 2px #3F65DE;
+}
+
     /* jumbo */
 .jumbotron {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding: 230px 0 50px 0;
-    color: #fff;
 }
 
 .jumbotron img {
@@ -45,7 +62,6 @@ body {
     /* preview blocks */
 .block_preview {
     text-align: center;
-    margin: 40px 0;
 }
 
 .block_preview .col{
@@ -187,8 +203,6 @@ header .jumbotron {
 }
 
 #ps5_sect a {
-    text-decoration: none;
-    color: #fff;
     margin: 5px 10px;
 }
 
@@ -198,10 +212,6 @@ header .jumbotron {
     min-width: 250px;
 }
         /* photo preview */
-.ps_product_preview {
-    margin: 40px 0;
-}
-
 #ps5_sect .ps_product_preview img{
     min-width: 120px;
     max-width: 150px;
@@ -258,21 +268,12 @@ header .jumbotron {
     margin: 0 10px;
 }
 
-#just_released a{
-    text-decoration: none;
-    color: #fff;
-}
-
 .block_preview .col:hover img{
     box-shadow: inset 0 0 0 2px #3499ec;
     bottom: 20px;
 }
 
     /* ps4 section */
-#ps4_sect {
-    margin: 30px 0;
-}
-
 #ps4_sect h2 {
     margin: 0;
 }
@@ -290,10 +291,6 @@ header .jumbotron {
     margin-top: 20px;
 }
 
-.product_sell {
-    margin: 50px 0;
-}
-
 .product_sell img {
     width: 100%;
     max-width: 400px;
@@ -307,11 +304,6 @@ header .jumbotron {
     margin: 20px 0;
 }
 
-.product_sell .btn a {
-    color: #fff;
-    text-decoration: none;
-}
-
     /* ps_banner */ 
 #odd_ban {
     background-color: #BCB9B8;
@@ -323,22 +315,18 @@ header .jumbotron {
 }
 
 #odd_ban .btn a {
-    text-decoration: none;
+    color: #3F65DE;
+    border: transparent;
 }
 
     /* sales section */
-#sales {
-    margin: 50px 0;
-}
-
-    #sales img {
+#sales img {
     width: 100%;
 }
 
     /* marv_ban section */
 #marv_ban {
     background-color: #181C39;
-    color: #fff
 }
 
 #marv_ban .btn {
@@ -362,7 +350,6 @@ header .jumbotron {
 /* FOOTER */
 footer {
     background-color: #1A4296;
-    color: #fff;
     padding: 50px 0;
 }
 
@@ -384,19 +371,19 @@ footer {
 
 #foot_links li, #foot_links a {
     font-size: .9rem;
-    text-decoration: none;
     list-style: none;
-    color: #fff;
 }
+
+#foot_links a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
     /* copyrights section */
 #copyrights {
     margin-top: 50px;
 }
 
-    #copyrights img {
+#copyrights img {
     width: 170px;
-}
-
-#copyrights a{
-    color: #fff;
 }
