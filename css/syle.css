@@ -95,7 +95,7 @@ header {
     font-size: .8rem;
 }
 
-.header-fix {
+.header_fix {
     width: 100%;
     position: fixed;
     top: 0;
@@ -103,7 +103,7 @@ header {
     z-index: 1;
 }
 
-.header-fix .navbar {
+.header_fix .navbar {
     height: 60px;
 }
 
@@ -357,4 +357,46 @@ header .jumbotron {
 
 #social img {
     width: 100%;
+}
+
+/* FOOTER */
+footer {
+    background-color: #1A4296;
+    color: #fff;
+    padding: 50px 0;
+}
+
+    /* country section */
+#country img {
+    width: 80px;
+}
+
+#country h5 {
+    margin: 30px 0;
+    font-size: .8rem;
+}
+
+#country i.fa-globe {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+#foot_links li, #foot_links a {
+    font-size: .9rem;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+    /* copyrights section */
+#copyrights {
+    margin-top: 50px;
+}
+
+    #copyrights img {
+    width: 170px;
+}
+
+#copyrights a{
+    color: #fff;
 }
