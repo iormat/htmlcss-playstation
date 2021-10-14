@@ -9,6 +9,14 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: inherit;
+}
+
+img {
+    width: 100%;
+}
+
 .jumbotron, #just_released, #marv_ban, footer {
     color: #fff;
 }
@@ -69,7 +77,6 @@ a {
 }
 
 .block_preview img {
-    width: 100%;
     max-width: 350px;
     border-radius: 15px;
     padding: 3px;
@@ -93,7 +100,6 @@ a {
 }
 
 .ps_banner .ps_show_hide img {
-    max-width: 100%;
     width: 100%;
     padding: 0;
 }
@@ -207,21 +213,25 @@ header .jumbotron {
 }
 
 #ps5_sect img {
-    width: 100%;
     max-width: 600px;
     min-width: 250px;
 }
-        /* photo preview */
+    /* photo preview */
 #ps5_sect .ps_product_preview img{
     min-width: 120px;
     max-width: 150px;
     opacity: .7;
+    margin-bottom: 30px;
+}
+
+.ps_product_preview .col {
     margin-bottom: 30px;
     border-bottom: 3px solid transparent;
 }
 
 #ps5_sect .ps_product_preview .col:hover {
     border-bottom: 3px solid #3499ec;
+    cursor: pointer;
 }
 
 #ps5_sect .ps_product_preview .col:hover img{
@@ -319,11 +329,6 @@ header .jumbotron {
     border: transparent;
 }
 
-    /* sales section */
-#sales img {
-    width: 100%;
-}
-
     /* marv_ban section */
 #marv_ban {
     background-color: #181C39;
@@ -336,15 +341,6 @@ header .jumbotron {
 #marv_ban .btn a {
     text-decoration: none;
     color: #000;
-}
-
-    /* social section */
-#social {
-    margin: 50px 0;
-}
-
-#social img {
-    width: 100%;
 }
 
 /* FOOTER */
@@ -375,7 +371,6 @@ footer {
 }
 
 #foot_links a:hover {
-    color: #fff;
     text-decoration: underline;
 }
 
