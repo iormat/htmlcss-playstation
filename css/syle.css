@@ -138,8 +138,11 @@ header {
 }
 
 #page-brand img {
+    margin-right: 20px;
     max-height: 15px;
+    width: auto;
 }
+
     /* header nav */
 nav .dropdown, .dropend, .dropstart, .dropup {
     position: static;
@@ -184,6 +187,7 @@ nav .navbar-collapse>img {
     width: 30px;
     margin: 5px;
 }
+    /* nav button personalized */
 @media screen and (max-width: 767px) {
     .navbar .btn {
         padding: 5px 50px;
