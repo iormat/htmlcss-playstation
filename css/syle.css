@@ -1,4 +1,4 @@
-/* GENERAL RULES */
+/* GENERAL RULES -------------------- */
 body {
     font-family: Arial, Helvetica, sans-serif;
     overflow-x: hidden;
@@ -81,7 +81,7 @@ img {
 .block_preview img {
     max-width: 350px;
     border-radius: 15px;
-    padding: 3px;
+    padding: 5px;
     position: relative;
 }
 
@@ -97,12 +97,11 @@ img {
     /* banner */
 .ps_banner img {
     width: 50%;
-    min-width: 250px;
     padding: 30px 0;
 }
 
 .ps_banner .ps_show_hide img {
-    width: 100%;
+    width: 102%;
     padding: 0;
 }
 
@@ -113,7 +112,7 @@ img {
     }
 }
 
-/* HEADER */
+/* HEADER -------------------- */
 header {
     font-family: 'Helvetica';
     font-size: .9rem;
@@ -212,7 +211,12 @@ header .jumbotron {
     background-image: url('../img/jumbo-bg.png');
 }
 
-/* MAIN */
+    /* header block_preview */
+header .block_preview .col{
+    padding: 15px;
+}
+
+/* MAIN -------------------- */
     /* ps5 section */
 .ps_container_center h5 {
     text-transform: uppercase;
@@ -230,8 +234,9 @@ header .jumbotron {
     color: #787777;
 }
 
-#ps5_sect a {
-    margin: 5px 10px;
+#ps5_sect .btn {
+    padding: 10px;
+    border-radius: 25px;
 }
 
 #ps5_sect img {
@@ -244,11 +249,10 @@ header .jumbotron {
     min-width: 120px;
     max-width: 150px;
     opacity: .7;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .ps_product_preview .col {
-    margin-bottom: 30px;
     border-bottom: 3px solid transparent;
 }
 
@@ -261,7 +265,7 @@ header .jumbotron {
     opacity: 1;
 }
 
-#ps5_sect .ps_product_preview .ps_ps5_active {
+#ps5_sect    .ps_ps5_active {
     border-bottom: 3px solid #3499ec;
     opacity: 1
 }
@@ -308,7 +312,7 @@ header .jumbotron {
 
 #just_released h6 {
     text-align: initial;
-    margin: 0 10px;
+    margin: 0 20px;
 }
 
 #just_released.block_preview .col:hover img{
@@ -331,11 +335,6 @@ header .jumbotron {
 
 #ps4_sect .ps_container_center p:first-of-type {
     margin-top: 20px;
-}
-
-.product_sell img {
-    width: 100%;
-    max-width: 400px;
 }
 
 .product_sell p{
@@ -378,6 +377,7 @@ header .jumbotron {
     /* social section */
 #social img {
     width: calc(25% - 10px);
+    max-width: 180px;
     padding: 10px;
 }
 
@@ -387,7 +387,7 @@ header .jumbotron {
     }
 }
 
-/* FOOTER */
+/* FOOTER -------------------- */
 footer {
     background-color: #1A4296;
     padding: 50px 0;
