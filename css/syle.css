@@ -89,7 +89,7 @@ img {
     box-shadow: inset 0 0 0 2px #3499ec; 
 }
 
-.block_preview img:hover {
+.block_preview .col:hover img{
     box-shadow: inset 0 0 0 2px #3499ec;
     bottom: 20px;
 }
@@ -176,6 +176,15 @@ nav .navbar-collapse {
     background-color: #F9F9FA;
 }
 
+nav .dropdown-menu ul .dropdown-divider {
+    display: block;
+}
+
+nav .under_drop_menu {
+    text-align: center;
+    padding: 0;
+}
+
 nav .dropdown-item:hover {
     background-color: rgba(48, 110, 202, .6);
 }
@@ -188,13 +197,13 @@ nav .navbar-collapse>img {
     width: 30px;
     margin: 5px;
 }
+
     /* nav button personalized */
 @media screen and (max-width: 767px) {
     .navbar .btn {
         padding: 5px 50px;
         margin: 0 5px;
     }
-    
 }
 
     /* header jumbo */
@@ -229,6 +238,7 @@ header .jumbotron {
     max-width: 600px;
     min-width: 250px;
 }
+
     /* photo preview */
 #ps5_sect .ps_product_preview img{
     min-width: 120px;
@@ -287,6 +297,11 @@ header .jumbotron {
     margin: 0;
 }
 
+#just_released.block_preview img {
+    padding: 10px;
+    border-radius: 20px;
+}
+
 #just_released h2, #just_released p {
     text-align: initial;
 }
@@ -296,8 +311,7 @@ header .jumbotron {
     margin: 0 10px;
 }
 
-.block_preview .col:hover img{
-    box-shadow: none;
+#just_released.block_preview .col:hover img{
     bottom: 0;
 }
 
