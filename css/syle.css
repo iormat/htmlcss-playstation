@@ -20,6 +20,7 @@ img {
 .jumbotron, #just_released, #marv_ban, footer {
     color: #fff;
 }
+
     /* section margin generalized */
 .block_preview, .ps_product_preview, 
 #ps4_sect, .product_sell, #sales, #social {
@@ -45,7 +46,7 @@ img {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    padding: 230px 0 50px 0;
+    padding: 250px 0 70px 0;
 }
 
 .jumbotron img {
@@ -63,7 +64,7 @@ img {
     margin: 20px 0;
 }
 
-    /* container for centering */
+    /* container for centering text */
 .ps_container_center {
     text-align: center;
 }
@@ -115,7 +116,7 @@ img {
 /* HEADER */
 header {
     font-family: 'Helvetica';
-    font-size: .8rem;
+    font-size: .9rem;
 }
 
 .header_fix {
@@ -127,7 +128,7 @@ header {
 }
 
 .header_fix .navbar {
-    height: 60px;
+    height: 80px;
 }
 
 #page-brand {
@@ -198,7 +199,7 @@ nav .navbar-collapse>img {
 
     /* header jumbo */
 header .jumbotron {
-    margin-top: 95px;
+    margin-top: 111px;
     background-image: url('../img/jumbo-bg.png');
 }
 
@@ -259,6 +260,12 @@ header .jumbotron {
     opacity: 1
 }
 
+@media screen and (max-width: 767px) {
+    #ps5_sect .ps_product_preview p {
+        display: none;
+    }
+}
+
     /* jumbotron takes_two */
 .jumbotron.takes_two {
     background-image: url('../img/it-takes-two-hero-banner-desktop.jpg');
@@ -284,15 +291,14 @@ header .jumbotron {
     text-align: initial;
 }
 
-
 #just_released h6 {
     text-align: initial;
     margin: 0 10px;
 }
 
 .block_preview .col:hover img{
-    box-shadow: inset 0 0 0 2px #3499ec;
-    bottom: 20px;
+    box-shadow: none;
+    bottom: 0;
 }
 
     /* ps4 section */
@@ -355,6 +361,18 @@ header .jumbotron {
     color: #000;
 }
 
+    /* social section */
+#social img {
+    width: calc(25% - 10px);
+    padding: 10px;
+}
+
+@media screen and (max-width: 575px) {
+    #social img {
+        width: calc(50% - 10px);
+    }
+}
+
 /* FOOTER */
 footer {
     background-color: #1A4296;
@@ -382,7 +400,7 @@ footer {
     list-style: none;
 }
 
-#foot_links a:hover {
+#foot_links a:hover, #copyrights a:hover {
     text-decoration: underline;
 }
 
